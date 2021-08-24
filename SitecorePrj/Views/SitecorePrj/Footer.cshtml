@@ -1,0 +1,12 @@
+@{
+    // var item = Sitecore.Context.Database.GetItem("/sitecore/content/Alexa/WebsiteSettings/LocalSetting");
+    var item = Sitecore.Context.Database.GetItem("{0E20BDE8-935C-41A9-B3CC-42A33B6C76FE}");
+}
+	
+<Footer>
+    <div class="container">
+        <div class="text-white bg-primary">
+            <p class="lead">@Html.Sitecore().Field("Copyright", item)</p>
+        </div>
+    </div>
+</Footer>
